@@ -1,12 +1,7 @@
+<!-- <app-inner-poster></app-inner-poster> -->
+
 <div class="full-screen container-fluid bg-dark1 text-light">
-    <div class="container">
-        <div class="row py-5">
-            <app-main-title title="Projects" text="some of my personal projects in multiple fields"></app-main-title>
-            <div *ngFor="let posterEl of posters" class="col-auto">
-                <app-poster-card [poster]="posterEl"></app-poster-card>
+    <app-posters-section class="py-5"></app-posters-section>
 
-            </div>
-        </div>
-
-    </div>
+    
 </div>

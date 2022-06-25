@@ -33,8 +33,10 @@
 }
 
 .full-screen {
-    height: 100vh;
+    height: 100%;
 }
+
+
 
 a {
     text-decoration:  none;

@@ -1,0 +1,18 @@
+.line {
+    /* Vector 6 */
+
+
+    width: auto;
+    height: 0px;
+
+    /* opacity: 0.8; */
+    /* Slate/Text Muted */
+
+    border: 1px solid #F9AF10;
+
+    /* Inside auto layout */
+
+    flex: none;
+    /* order: 0; */
+    flex-grow: 1;
+}
