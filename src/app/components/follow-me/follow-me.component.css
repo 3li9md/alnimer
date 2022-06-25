@@ -1,0 +1,26 @@
+.icon {
+    width: 16px;
+    height: auto;
+    /* fill: #F9AF10; */
+    filter: invert(69%) sepia(54%) saturate(765%) hue-rotate(351deg) brightness(99%) contrast(97%);
+    color: #F9AF10;
+    
+}
+
+.icon-circle:hover {
+    filter: brightness(1.2);
+}
+
+.icon-circle {
+    border: 1px solid #F9AF10;
+    border-radius: 50%;
+    /* padding: auto; */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* max-width: max-content;
+    max-height: max-content; */
+}

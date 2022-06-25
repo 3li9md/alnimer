@@ -1,0 +1,13 @@
+.nav-link {
+    color: #F7F7F7;
+    font-weight: lighter;
+}
+
+.active {
+    font-weight: 600;
+    border-bottom: 1px solid #F9AF10;
+}
+
+.bg-dark {
+    background: #0e0e0e !important;
+}

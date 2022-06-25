@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-dark1 {
+    background: #0e0e0e;
+}
+
+.hover-zoomin {
+    transition: ease 600ms;
+}
+
+.hover-zoomin:hover {
+    scale: calc(1.05);
+}
+
+.my-btn-oultine {
+    border: 1px solid #F9AF10 !important;
+    
+    color: #F9AF10 !important;
+}
+
+.my-btn-oultine:hover {
+    background: #F9AF10;
+    color: white !important;
+    box-shadow: 0px 4px 10px rgba(249, 175, 16, 0.15);
+}
+
+.my-btn {
+    background: #F9AF10 !important;
+    color: white !important;
+}
+
+.my-btn:hover {
+    filter: brightness(1.2);
+}
+
+.full-screen {
+    height: 100vh;
+}
+
+a {
+    text-decoration:  none;
+}
