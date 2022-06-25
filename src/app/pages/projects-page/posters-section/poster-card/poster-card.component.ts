@@ -9,7 +9,7 @@ import { Poster } from '../poster.model';
 export class PosterCardComponent implements OnInit {
 
   constructor() { }
-  @Input() poster: any;
+  @Input() poster!: Poster;
 
   ngOnInit(): void {
   }

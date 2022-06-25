@@ -1,7 +1,12 @@
 <div class="container">
-    <div class="row">
-        <div class="col-4">
-            <p>fsjdlkf</p>
-        </div>
+  <div class="row py-5 d-flex justify-content-center">
+    <app-main-title title="Services" text="How could I help you?"></app-main-title>
+
+    <div
+      *ngFor="let serviceEl of services"
+      class="d-flex justify-content-center py-5 col-md-4 col-lg-3"
+    >
+      <app-service-card [service]="serviceEl"></app-service-card>
     </div>
+  </div>
 </div>

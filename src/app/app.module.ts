@@ -15,6 +15,7 @@ import { ServicesComponent } from './pages/services-page/services/services.compo
 import { InnerPosterComponent } from './pages/projects-page/posters-section/inner-poster/inner-poster.component';
 import { PostersSectionComponent } from './pages/projects-page/posters-section/posters-section.component';
 import { SectionTitleComponent } from './pages/projects-page/section-title/section-title.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { SectionTitleComponent } from './pages/projects-page/section-title/secti
     PosterCardComponent,
     InnerPosterComponent,
     PostersSectionComponent,
-    SectionTitleComponent
+    SectionTitleComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
