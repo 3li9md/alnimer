@@ -6,8 +6,8 @@
     text="some of my personal projects in multiple fields"
   ></app-main-title>
   <app-section-title>Movie Posters</app-section-title>
-  <div class="row py-3 gx-md-3 gy-3">
-    <div *ngFor="let posterEl of posters" class="col-auto">
+  <div class="row py-3 gx-md-auto d-flex justify-content-sm-between justify-content-lg-center gy-3">
+    <div *ngFor="let posterEl of posters" class="col-auto py-sm-3">
       <app-poster-card
         [poster]="posterEl"
         (click)="onPosterClicked(true)"

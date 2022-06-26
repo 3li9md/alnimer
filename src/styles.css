@@ -7,6 +7,15 @@
     opacity: 0.6;
 }
 
+.light {
+    filter: invert()
+}
+
+.yellow {
+    filter: invert(69%) sepia(54%) saturate(765%) hue-rotate(351deg) brightness(99%) contrast(97%);
+
+}
+
 .hover-zoomin {
     transition: ease 600ms;
 }
@@ -17,7 +26,7 @@
 
 .my-btn-outline {
     border: 1px solid #F9AF10 !important;
-    
+
     color: #F9AF10 !important;
 }
 
@@ -36,12 +45,14 @@
     filter: brightness(1.2);
 }
 
-.full-screen {
+/* .full-screen {
     height: 100vh;
+} */
+
+.text-yellow {
+    color: #F9AF10;
 }
 
-
-
 a {
-    text-decoration:  none;
+    text-decoration: none;
 }

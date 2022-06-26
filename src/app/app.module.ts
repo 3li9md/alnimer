@@ -16,6 +16,11 @@ import { InnerPosterComponent } from './pages/projects-page/posters-section/inne
 import { PostersSectionComponent } from './pages/projects-page/posters-section/posters-section.component';
 import { SectionTitleComponent } from './pages/projects-page/section-title/section-title.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 
 @NgModule({
@@ -33,13 +38,27 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     InnerPosterComponent,
     PostersSectionComponent,
     SectionTitleComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AboutPageComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

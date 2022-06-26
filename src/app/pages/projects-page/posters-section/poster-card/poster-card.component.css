@@ -5,13 +5,20 @@
     max-height: 320px; */
     overflow: hidden;
     position: relative;
+    display: flex;
+    /* justify-content: center; */
+    
+    cursor: pointer;
 
 }
 
-.img-poster {
+a img{
     height: 320px;
     width: auto;
-    object-fit: cover;
+    /* object-fit: cover; */
+    /* display: block;
+    margin: auto;
+     */
     /* position: absolute; */
     /* transition: ease 600ms; */
 }
@@ -43,6 +50,7 @@
 
     flex-direction: row;
     align-items: flex-end;
+    
 
     padding: 0px 20px 40px 20px;
 
