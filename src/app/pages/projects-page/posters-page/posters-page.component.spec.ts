@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InnerPosterComponent } from './inner-poster.component';
+import { PostersPageComponent } from './posters-page.component';
 
-describe('InnerPosterComponent', () => {
-  let component: InnerPosterComponent;
-  let fixture: ComponentFixture<InnerPosterComponent>;
+describe('PostersPageComponent', () => {
+  let component: PostersPageComponent;
+  let fixture: ComponentFixture<PostersPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InnerPosterComponent ]
+      declarations: [ PostersPageComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(InnerPosterComponent);
+    fixture = TestBed.createComponent(PostersPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

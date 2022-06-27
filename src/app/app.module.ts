@@ -12,7 +12,6 @@ import { MainTitleComponent } from './components/main-title/main-title.component
 import { PosterCardComponent } from './pages/projects-page/posters-section/poster-card/poster-card.component';
 import { ServiceCardComponent } from './pages/services-page/services/service-card/service-card.component';
 import { ServicesComponent } from './pages/services-page/services/services.component';
-import { InnerPosterComponent } from './pages/projects-page/posters-section/inner-poster/inner-poster.component';
 import { PostersSectionComponent } from './pages/projects-page/posters-section/posters-section.component';
 import { SectionTitleComponent } from './pages/projects-page/section-title/section-title.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
@@ -21,6 +20,8 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { InnerPosterPageComponent } from './pages/projects-page/posters-section/inner-poster-page/inner-poster-page.component';
+import { PostersPageComponent } from './pages/projects-page/posters-page/posters-page.component';
 
 
 @NgModule({
@@ -35,12 +36,13 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     MainTitleComponent,
     ProjectsPageComponent,
     PosterCardComponent,
-    InnerPosterComponent,
     PostersSectionComponent,
     SectionTitleComponent,
     PageNotFoundComponent,
     AboutPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    InnerPosterPageComponent,
+    PostersPageComponent
   ],
   imports: [
     BrowserModule,
