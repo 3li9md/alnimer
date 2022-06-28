@@ -2,34 +2,47 @@
     <div class="container">
 
         <div class="row py-5">
-            <div class="col-12">
+            <div class="col-12 ">
                 <button routerLink="../" class="btn my-btn-outline">
                     Go Back
                 </button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4">
+        <div class="row d-flex pb-5">
+            <div class="col-lg-4 col-sm-12 ">
                 <img [src]="movie.img" alt="" class="poster-img hover-zoomin">
             </div>
-            <div class="col-8">
-                <h5 class="display-5">{{movie.title}}</h5>
-                <div class="row text-muted">
-                    <div class="col-auto ">
-                        <p>{{movie.genre}}</p>
+            <div class="col-lg-8 col-sm-12 pt-3">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-11">
+                            <h5 class="display-5 text-uppercase">{{movie.title}}</h5>
+                            <div class="row text-muted">
+                                <div class="col-auto ">
+                                    <p>{{movie.genre}}</p>
+                                </div>
+                                <div class="col-auto">
+                                    <p>{{movie.ageRating}}</p>
+                                </div>
+                                <div class="col-auto">
+                                    <p>{{movie.duration}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-start pt-2">
+                            <h5>
+                                <span class="badge bg-yellow">{{movie.rating}}</span>
+                            </h5>
+                        </div>
                     </div>
-                    <div class="col-auto">
-                        <p>{{movie.ageRating}}</p>
-                    </div>
-                    <div class="col-auto">
-                        <p>{{movie.duration}}</p>
-                    </div>
+                    <p>
+                        {{movie.text}}
+                    </p>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque impedit exercitationem
-                    voluptates, facilis assumenda, ducimus error alias consequatur quos repellat, ipsa provident laborum
-                    eaque ea quis quae voluptas rerum.
-                </p>
+
+                <div class="row pt-5">
+                    <app-follow-me></app-follow-me>
+                </div>
             </div>
         </div>
     </div>
