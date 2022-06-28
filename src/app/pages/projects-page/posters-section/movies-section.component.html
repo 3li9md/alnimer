@@ -1,16 +1,16 @@
-<div class="container" *ngIf="posters">
+<div class="container" *ngIf="movies">
   <app-main-title title="Projects" text="some of my personal projects in multiple fields"></app-main-title>
   <app-section-title>Movie Posters</app-section-title>
   <div class="row py-3 gx-md-auto d-flex justify-content-sm-between justify-content-lg-center gy-3">
-    <div *ngFor="let posterEl of posters" class="col-auto py-sm-3">
-      <app-poster-card [poster]="posterEl" (click)="onPosterClicked(true)"></app-poster-card>
+    <div *ngFor="let movieEl of movies | slice:0:4; let i=index"  class="col-auto py-sm-3">
+      <app-poster-card [movie]="movieEl" (click)="onPosterClicked(true)"></app-poster-card>
     </div>
   </div>
 </div>
 <div class="row py-3 d-flex justify-content-center text-center">
   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
     <div class="d-grid">
-      <button routerLink="/services" class="btn my-btn">
+      <button routerLink="posters" class="btn my-btn">
         Show All
       </button>
     </div>

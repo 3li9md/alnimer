@@ -1,15 +1,15 @@
-<a routerLink="/posters/">
+<a [routerLink]="['/projects' ,'posters', movie.id]">
     <div class="poster hover-zoomin">
         <div class="gradient"></div>
         <a>
-            <img [src]="poster.img" alt="" class="img-poster hover-zoomin">
+            <img [src]="movie.img" alt="" class="img-poster hover-zoomin">
         </a>
         <div class="poster-details d-flex justify-content-start">
             <div>
 
-                <h5>{{poster.title}}</h5>
+                <h5>{{movie.title}}</h5>
                 <p class="text-muted">
-                    {{poster.genre}}
+                    {{movie.genre}}
                 </p>
             </div>
         </div>

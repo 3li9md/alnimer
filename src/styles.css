@@ -45,9 +45,9 @@
     filter: brightness(1.2);
 }
 
-/* .full-screen {
-    height: 100vh;
-} */
+.full-screen {
+    min-height: 100vh;
+}
 
 .text-yellow {
     color: #F9AF10;

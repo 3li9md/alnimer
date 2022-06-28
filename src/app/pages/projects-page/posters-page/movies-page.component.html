@@ -1,0 +1,11 @@
+<div class="container-fluid full-screen bg-dark1 text-light">
+    <div class="container" *ngIf="movies">
+        <app-main-title title="Movie Posters" text="For actual and imaginary movies"></app-main-title>
+        <app-section-title>Movie Posters</app-section-title>
+        <div class="row py-3 gx-md-auto d-flex justify-content-sm-between justify-content-lg-center gy-3">
+            <div *ngFor="let movieEl of movies" class="col-auto py-sm-3">
+                <app-poster-card [movie]="movieEl"></app-poster-card>
+            </div>
+        </div>
+    </div>
+</div>

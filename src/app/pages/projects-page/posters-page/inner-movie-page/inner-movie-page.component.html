@@ -1,0 +1,36 @@
+<div class="container-fluid full-screen bg-dark1 text-light">
+    <div class="container">
+
+        <div class="row py-5">
+            <div class="col-12">
+                <button routerLink="../" class="btn my-btn-outline">
+                    Go Back
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img [src]="movie.img" alt="" class="poster-img hover-zoomin">
+            </div>
+            <div class="col-8">
+                <h5 class="display-5">{{movie.title}}</h5>
+                <div class="row text-muted">
+                    <div class="col-auto ">
+                        <p>{{movie.genre}}</p>
+                    </div>
+                    <div class="col-auto">
+                        <p>{{movie.ageRating}}</p>
+                    </div>
+                    <div class="col-auto">
+                        <p>{{movie.duration}}</p>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque impedit exercitationem
+                    voluptates, facilis assumenda, ducimus error alias consequatur quos repellat, ipsa provident laborum
+                    eaque ea quis quae voluptas rerum.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

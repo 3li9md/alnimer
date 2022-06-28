@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { FollowMeComponent } from './components/follow-me/follow-me.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { ProjectsPageComponent} from './pages/projects-page/projects-page.component';
+import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { MainTitleComponent } from './components/main-title/main-title.component';
 import { PosterCardComponent } from './pages/projects-page/posters-section/poster-card/poster-card.component';
@@ -20,9 +20,24 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { InnerPosterPageComponent } from './pages/projects-page/posters-section/inner-poster-page/inner-poster-page.component';
+import { InnerPosterPageComponent } from './pages/projects-page/posters-page/inner-poster-page/inner-poster-page.component';
 import { PostersPageComponent } from './pages/projects-page/posters-page/posters-page.component';
+import { Routes, RouterModule } from '@angular/router';
 
+const routes: Routes = [
+  { path: '', component: HomePageComponent },
+  { path: "services", component: ServicesPageComponent },
+  {
+    path: "projects", component: ProjectsPageComponent
+  },
+  { path: "about", component: AboutPageComponent },
+  { path: "contact", component: ContactPageComponent },
+  { path: "projects/posters", component: PostersPageComponent },
+  { path: "projects/posters/:id", component: InnerPosterPageComponent },
+  { path: "**", component: PageNotFoundComponent },
+
+
+];
 
 @NgModule({
   declarations: [
@@ -46,8 +61,8 @@ import { PostersPageComponent } from './pages/projects-page/posters-page/posters
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
+    RouterModule.forRoot(routes),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

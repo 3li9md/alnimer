@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Poster } from '../poster.model';
+import { Movie } from '../movie.model';
 
 @Component({
   selector: 'app-poster-card',
@@ -9,7 +9,7 @@ import { Poster } from '../poster.model';
 export class PosterCardComponent implements OnInit {
 
   constructor() { }
-  @Input() poster!: Poster;
+  @Input() movie!: Movie;
 
   ngOnInit(): void {
   }

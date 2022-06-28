@@ -1,5 +1,5 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
-import { Poster } from './poster.model';
+import { Movie } from './movie.model';
 
 @Component({
   selector: 'app-posters-section',
@@ -9,7 +9,7 @@ import { Poster } from './poster.model';
 export class PostersSectionComponent implements OnInit {
   constructor() {}
 
-  @Input('postersList') posters!: Poster[];
+  @Input('postersList') movies!: Movie[];
   posterClicked = false;
 
   ngOnInit(): void {}
