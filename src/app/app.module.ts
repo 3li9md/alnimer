@@ -9,10 +9,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { MainTitleComponent } from './components/main-title/main-title.component';
-import { PosterCardComponent } from './pages/projects-page/posters-section/poster-card/poster-card.component';
 import { ServiceCardComponent } from './pages/services-page/services/service-card/service-card.component';
 import { ServicesComponent } from './pages/services-page/services/services.component';
-import { PostersSectionComponent } from './pages/projects-page/posters-section/posters-section.component';
 import { SectionTitleComponent } from './pages/projects-page/section-title/section-title.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
@@ -20,9 +18,13 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { InnerPosterPageComponent } from './pages/projects-page/posters-page/inner-poster-page/inner-poster-page.component';
-import { PostersPageComponent } from './pages/projects-page/posters-page/posters-page.component';
 import { Routes, RouterModule } from '@angular/router';
+import { MovieCardComponent } from './pages/projects-page/posters-section/movie-card/movie-card.component';
+
+import { InnerMoviePageComponent } from './pages/projects-page/posters-page/inner-movie-page/inner-movie-page.component';
+import { MoviesSectionComponent } from './pages/projects-page/posters-section/movies-section.component';
+import { MoviesPageComponent } from './pages/projects-page/posters-page/movies-page.component';
+
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -32,8 +34,8 @@ const routes: Routes = [
   },
   { path: "about", component: AboutPageComponent },
   { path: "contact", component: ContactPageComponent },
-  { path: "projects/posters", component: PostersPageComponent },
-  { path: "projects/posters/:id", component: InnerPosterPageComponent },
+  { path: "projects/movies", component: MoviesPageComponent },
+  { path: "projects/movies/:id", component: InnerMoviePageComponent },
   { path: "**", component: PageNotFoundComponent },
 
 
@@ -50,14 +52,14 @@ const routes: Routes = [
     ServiceCardComponent,
     MainTitleComponent,
     ProjectsPageComponent,
-    PosterCardComponent,
-    PostersSectionComponent,
+    MovieCardComponent,
+    MoviesSectionComponent,
     SectionTitleComponent,
     PageNotFoundComponent,
     AboutPageComponent,
     ContactPageComponent,
-    InnerPosterPageComponent,
-    PostersPageComponent
+    InnerMoviePageComponent,
+    MoviesPageComponent
   ],
   imports: [
     BrowserModule,

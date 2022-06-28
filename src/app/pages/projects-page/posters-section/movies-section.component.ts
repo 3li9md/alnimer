@@ -2,14 +2,14 @@ import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { Movie } from './movie.model';
 
 @Component({
-  selector: 'app-posters-section',
-  templateUrl: './posters-section.component.html',
-  styleUrls: ['./posters-section.component.css'],
+  selector: 'app-movies-section',
+  templateUrl: './movies-section.component.html',
+  styleUrls: ['./movies-section.component.css'],
 })
-export class PostersSectionComponent implements OnInit {
+export class MoviesSectionComponent implements OnInit {
   constructor() {}
 
-  @Input('postersList') movies!: Movie[];
+  @Input('moviesList') movies!: Movie[];
   posterClicked = false;
 
   ngOnInit(): void {}

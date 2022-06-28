@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { MOVIES } from 'src/app/shared/MoviesList';
 
 @Component({
-  selector: 'app-posters-page',
-  templateUrl: './posters-page.component.html',
-  styleUrls: ['./posters-page.component.css']
+  selector: 'app-movies-page',
+  templateUrl: './movies-page.component.html',
+  styleUrls: ['./movies-page.component.css']
 })
-export class PostersPageComponent implements OnInit {
+export class MoviesPageComponent implements OnInit {
 
   constructor() { }
 
