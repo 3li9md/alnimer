@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MOVIES } from 'src/app/shared/MoviesList';
-import { Movie } from '../../posters-section/movie.model';
+import { Movie } from '../../../../shared/models/movie.model';
 import { ActivatedRoute, Params } from '@angular/router';
 @Component({
   selector: 'app-inner-movie-page',

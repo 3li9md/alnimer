@@ -1,5 +1,5 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
-import { Movie } from './movie.model';
+import { Movie } from '../../../shared/models/movie.model';
 
 @Component({
   selector: 'app-movies-section',

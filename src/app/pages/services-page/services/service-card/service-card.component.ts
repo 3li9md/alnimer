@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Service } from '../../service.model';
-
+import { Service } from 'src/app/shared/models/service.model';
 
 @Component({
   selector: 'app-service-card',
@@ -11,7 +10,7 @@ export class ServiceCardComponent implements OnInit {
 
   constructor() { }
 
-  @Input() service: any;
+  @Input() service!: Service;
 
   ngOnInit(): void {
   }

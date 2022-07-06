@@ -19,27 +19,12 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { Routes, RouterModule } from '@angular/router';
-import { MovieCardComponent } from './pages/projects-page/posters-section/movie-card/movie-card.component';
+import { MovieCardComponent } from './pages/projects-page/posters-page/movie-card/movie-card.component';
 
 import { InnerMoviePageComponent } from './pages/projects-page/posters-page/inner-movie-page/inner-movie-page.component';
 import { MoviesSectionComponent } from './pages/projects-page/posters-section/movies-section.component';
 import { MoviesPageComponent } from './pages/projects-page/posters-page/movies-page.component';
 
-
-const routes: Routes = [
-  { path: '', component: HomePageComponent },
-  { path: "services", component: ServicesPageComponent },
-  {
-    path: "projects", component: ProjectsPageComponent
-  },
-  { path: "about", component: AboutPageComponent },
-  { path: "contact", component: ContactPageComponent },
-  { path: "projects/movies", component: MoviesPageComponent },
-  { path: "projects/movies/:id", component: InnerMoviePageComponent },
-  { path: "**", component: PageNotFoundComponent },
-
-
-];
 
 @NgModule({
   declarations: [
@@ -64,7 +49,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes),
+    AppRoutingModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

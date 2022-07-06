@@ -1,4 +1,4 @@
-import { Movie } from "../pages/projects-page/posters-section/movie.model";
+import { Movie } from "./models/movie.model";
 
 export const MOVIES: Movie[] = [
     {

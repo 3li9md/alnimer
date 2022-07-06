@@ -60,3 +60,11 @@
 a {
     text-decoration: none;
 }
+
+.poster {
+    border-radius: 15px;
+
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
